@@ -1,6 +1,7 @@
-package homeWork;
+package demowebshop.models;
 
 public class User {
+
     private String firstname;
     private String lastname;
     private String email;

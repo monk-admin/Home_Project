@@ -1,6 +1,5 @@
-package homeWork;
+package demowebshop.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -8,6 +7,6 @@ public class HomePageTests extends TestBase{
 
     @Test
     public void isHomePageComponentPresentTest(){
-        Assert.assertTrue(isHomePageComponentPresent());
+        Assert.assertTrue(app.getHome().isHomePageComponentPresent());
     }
 }

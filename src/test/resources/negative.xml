@@ -3,13 +3,13 @@
 <suite name="Negative" verbose="1">
     <test name="Negative">
         <classes>
-            <class name="homeWork.UserLoginTests">
+            <class name="demowebshop.tests.UserLoginTests">
                 <methods>
                     <include name="*.Negative.*">
                     </include>
                 </methods>
             </class>
-            <class name="homeWork.CreateAccountTests">
+            <class name="demowebshop.tests.CreateAccountTests">
                 <methods>
                     <include name="*.Negative.*">
                     </include>
