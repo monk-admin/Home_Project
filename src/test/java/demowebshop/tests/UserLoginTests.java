@@ -1,5 +1,6 @@
 package demowebshop.tests;
 
+import demowebshop.data.UserData;
 import demowebshop.models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -16,8 +17,9 @@ public class UserLoginTests extends TestBase{
 
     @Test(priority = 1)
     public void userLogin(){
+        logger.info("Login with data --> " + " Login: " + UserData.EMAIL + " Password: " + UserData.PASSWORD);
         app.getUser().clickOnLoginLink();
-        app.getUser().fillInLoginForm(new User().setEmail("tomHanks09071956@gmail.com").setPassword("Heelo123!"));
+        app.getUser().fillInLoginForm(new User().setEmail(UserData.EMAIL).setPassword(UserData.PASSWORD));
         app.getUser().clickOnLoginButton();
         Assert.assertTrue(app.getUser().isLogOutButtonPresent());
     }
@@ -25,7 +27,7 @@ public class UserLoginTests extends TestBase{
     @Test(priority = 2)
     public void userLoginNegative(){
         app.getUser().clickOnLoginLink();
-        app.getUser().fillInLoginForm(new User().setPassword("Heelo123!"));
+        app.getUser().fillInLoginForm(new User().setPassword(UserData.PASSWORD));
         app.getUser().clickOnLoginButton();
         Assert.assertTrue(app.getUser().isAlertDisplayed());
     }

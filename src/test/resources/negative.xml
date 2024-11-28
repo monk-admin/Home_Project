@@ -5,13 +5,13 @@
         <classes>
             <class name="demowebshop.tests.UserLoginTests">
                 <methods>
-                    <include name="*.Negative.*">
+                    <include name=".*Negative.*">
                     </include>
                 </methods>
             </class>
             <class name="demowebshop.tests.CreateAccountTests">
                 <methods>
-                    <include name="*.Negative.*">
+                    <include name=".*Negative.*">
                     </include>
                 </methods>
             </class>

@@ -6,10 +6,15 @@
             <class name="demowebshop.tests.HomePageTests"/>
             <class name="demowebshop.tests.CreateAccountTests">
                 <methods>
+                    <exclude name=".*From.*"></exclude>
+                </methods>
+            </class>
+            <class name="demowebshop.tests.UserLoginTests">
+                <methods>
                     <exclude name=".*Negative.*"></exclude>
                 </methods>
             </class>
-            <class name="demowebshop.tests.UserLoginTests"/>
+            <class name="demowebshop.tests.AddItemToCart"/>
         </classes>
     </test>
 </suite>
